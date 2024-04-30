@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.6">
+    <style>
+        table {
+            width: 100%;
+        }
+        footer {
+            text-align: center;
+            font-style: italic;
+        }
+		
+		
+    </style>
+</head>
+<body>
+    
+    <img src="black-logo.png">
+    <img src="./upload/{{ photo }}"  class="img-fluid img-thumbnail mt-4 mb-2"
+    style="width: 120px; z-index: 1">
+    <h1>Vos informations personelles Photo: </h1>
+    
+    <p>Votre id: {{ id }}</p>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Annonce</th>
+                <th>Quantité</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>A sample product</td>
+                <td>{{ quantity }}</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <footer>
+        This is an example
+    </footer>
+    
+</body>
+</html>
